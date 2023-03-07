@@ -132,7 +132,6 @@ nav{
 
 main{
     width: 100%;
-
 }
 
 aside{
@@ -162,4 +161,79 @@ aside{
 }
 .nav-item a{
     font-size: .6rem;
+}
+
+/* videos section */
+
+.video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+ }
+ .video .card{
+    width: 22%;
+    border-radius: 1rem;
+    display: block;
+    padding-block: 1rem;
+
+ }
+ .video-section{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    overflow: hidden;
+ }
+ .video-section img{
+    width: 100%;
+
+ }
+ .title{
+    display: flex;
+    padding: .6rem 0;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ .description>p{
+    font-weight: bold;
+ }
+ .person-name{
+   font-size: .8rem;
+   padding-top: 0.3rem;
+ }
+.person-name p{
+    line-height: 1.3;
+}
+.active{
+    display: block;
+}
+@media screen and (max-width: 767px) {
+    .video{
+        margin: 0 0.2rem;
+    }
+    .video .card{
+        width: 50%;
+
+    }
+    aside{
+        display: none;
+    }
+}
+@media screen and (max-width: 992px) {
+    .video .card{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .video .card{
+        width: 80%;
+    }
+    aside{
+        display: none;
+    }
 }
